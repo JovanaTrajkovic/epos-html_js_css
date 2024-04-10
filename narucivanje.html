@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatable" content="ie=edge">
+        <meta name="keywords" content="kosa,sminka, lepotam, nega">
+        <title>Maybelline New York</title>
+        <link rel="shortcut icon" type="image/png" href="slike/logo.jpg">
+        <link href="css/general.css" rel="stylesheet" type="text/css" media="all" >
+        <script src="javascript/narucivanjeProvera.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <header> 
+            <label id="label2" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/> 
+            <div class="menu">
+                <ul>
+                    <li><a  href="pocetna.html">Početna</a></li>
+                    <li><a href="proizvodi.html">Proizvodi</a></li>
+                    <li><a class="active" href="narucivanje.html">Naručivanje</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a  href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>  
+        </header>
+
+            <div class="page-content">
+                <h1>Naručite!</h1>
+                    <div class="forma">
+                        <form  id="poruci" name="poruci">
+                            <div class="form-group">
+                                <div class="kolona1">
+                                    <input class="poljeForma" type="text" name="ime" id="ime"  maxlength="64" 
+                                    placeholder="Ime" >
+                                </div>
+                                <div class="kolona1">
+                                    <input class="poljeForma" type="text" name="prezime" id="prezime"  maxlength="64"  
+                                    placeholder="Prezime" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="kolona1">
+                                    <input class="poljeForma" type="adress" name="adresa"  id="adresa"  maxlength="128"  
+                                                                placeholder="Adresa"> 
+                                </div>
+                                <div class="kolona1">
+                                    <input class="poljeForma" type="number" name="broj"  id="brojAdresa"  maxlength="128"  
+                                                                placeholder="Broj adrese"> 
+                                </div>
+                                <div class="kolona1">
+                                    <input class="poljeForma" type="number" name="brojTelefona" id="broj" maxlength="128"  
+                                    placeholder="Broj telefona"> 
+                                </div>
+                            </div>
+                            
+                            <h3>Koji je vaš tip kože?</h3>
+                            <div class="form-group">
+                                <div class="kolona1">
+                                    <input type="radio" required aria-required="true" name="tipKože" value="masna" id="tipKože" >
+                                    <label for="masna">masna</label>
+                                </div>
+                                <div class="kolona1">
+                                    <input type="radio"  name="tipKože" value="suva" id="tipKože">
+                                    <label for="suva">suva</label>
+                                </div>
+                                <div class="kolona1">
+                                    <input type="radio" name="tipKože" value="normalna" id="tipKože">
+                                    <label for="normalna">normanlna</label>
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <h3>Koji proizvodi Vas zanimaju?</h3>
+                                <select class="padajuciMeni" name="proizvodi" id="proizvodi">
+                                    <option value="puder">puder</option>
+                                    <option value="karmin">karmin</option>
+                                    <option value="korektor">korektor</option>
+                                    <option value="rumenilo">rumenilo</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <h3>Da li želite dostavu na kućnu adresu ?</h3>
+                                <select class="padajuciMeni" name="dostava" id="dostava">
+                                    <option value="DA">DA</option>
+                                    <option value="NE">NE</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <input class="dugme" type="submit" value="Pošalji" onclick="provera()">
+                                 <input class="dugme" type="reset" value="Resetuj" >
+                            </div>
+                        </form>
+                        <br>
+                        <p class="paragrafFoot">Maybelline New York</p>
+                        <br>
+                    </div>
+            </div>
+    </body>
+</html>
